@@ -14,11 +14,11 @@ This module provides some new functionality:
     ctype.isUpper()
     ctype.isHex()
 
-All function calls will expect a string value and will return a boolean value.
+> All function calls will expect a string value and will return a boolean value.
 
 ## isAlnum
 
-> Checks for alphanumeric characters.
+> Checks for just alphanumeric characters.
 
 Example:
 
@@ -35,7 +35,7 @@ end
 
 ## isAlpha
 
-> Checks for alphabetic characters.
+> Checks for just alphabetic characters.
 
 Example:
 
@@ -52,7 +52,7 @@ end
 
 ## isCntrl
 
-> Checks for control characters.
+> Checks for just control characters.
 
 Example:
 
@@ -69,7 +69,7 @@ end
 
 ## isDigit
 
-> Checks for numerical characters.
+> Checks for just numerical characters.
 
 Example:
 
@@ -103,7 +103,7 @@ end
 
 ## isLower
 
-> Checks for lowercase characters.
+> Checks for just lowercase characters.
 
 Example:
 
@@ -120,21 +120,85 @@ end
 
 ## isPrint
 
-> Checks for printable characters.
+> Checks for just printable characters.
 
+Example:
+
+```
+local ctype = require("ctype")
+
+if ctype.isPrint("Lee")
+then
+   print("Yes")
+else
+   print("No")
+end
+```
 
 ## isPunct
 
 >  Checks for any printable characters which are not whitespace or alphanumeric character.
 
+Example:
+
+```
+local ctype = require("ctype")
+
+if ctype.isPunct("@")
+then
+   print("Yes")
+else
+   print("No")
+end
+```
+
 ## isSpace
 
-> Checks for whitespace characters.
+> Checks for just whitespace characters.
+
+Example:
+
+```
+local ctype = require("ctype")
+
+if ctype.isSpace(" ")
+then
+   print("Yes")
+else
+   print("No")
+end
+```
 
 ## isUpper
 
-> Checks for uppercase characters.
+> Checks for just uppercase characters.
+
+Example:
+
+```
+local ctype = require("ctype")
+
+if ctype.isUpper("ABCDEFGH")
+then
+   print("Yes")
+else
+   print("No")
+end
+```
 
 ## isHex
 
-> Checks for characters representing a hexadecimal digit.
+> Checks for just characters representing a hexadecimal digit.
+
+Example:
+
+```
+local ctype = require("ctype")
+
+if ctype.isHex("ABCDEF0123456789")
+then
+   print("Yes")
+else
+   print("No")
+end
+```
