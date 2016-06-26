@@ -10,18 +10,21 @@
              const char *value = lua_tostring( L, 1 ); \
              int offset = 0; \
              int length = strlen( value ); \
-             result = 1; \
-             while ( offset < length ) \
+             if ( length != 0 ) \
              { \
-                 if ( ! F( value[offset] ) ) \
-                 { \
-                      result = 0; \
-                      break; \
-                 } \
-                 offset++; \
+                  result = 1; \
+                  while ( offset < length ) \
+                  { \
+                       if ( ! F( value[offset] ) ) \
+                       { \
+                            result = 0; \
+                            break; \
+                       } \
+                       offset++; \
+                  } \
              } \
         } \
-        lua_pushboolean( L, result ); \
+	lua_pushboolean( L, result ); \
         return 1;\
 
 int _isAlnum( lua_State *L )
