@@ -213,3 +213,9 @@ cd Lua-Ctype/src
 make
 make install
 ```
+
+Luarocks
+
+```
+luarocks install --server=http://luarocks.org/dev luactype
+```
