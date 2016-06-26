@@ -34,11 +34,6 @@ int _isAlpha( lua_State *L )
     CTYPE( L, isalpha );
 }
 
-int _isBlank( lua_State *L )
-{
-    CTYPE( L, isblank );
-}
-
 int _isCntrl( lua_State *L )
 {
     CTYPE( L, iscntrl );
@@ -88,7 +83,6 @@ static const luaL_Reg R[] =
 {
     {"isAlnum", _isAlnum},
     {"isAlpha", _isAlpha},
-    {"isBlank", _isBlank},
     {"isCntrl", _isCntrl},
     {"isDigit", _isDigit},
     {"isGraph", _isGraph},
