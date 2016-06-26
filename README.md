@@ -205,9 +205,11 @@ end
 
 ## Installation
 
+Standard
+
 ```
 git clone git://github.com/mostvotedplaya/Lua-Ctype.git
-cd Lua-Ctype
+cd Lua-Ctype/src
 make
 make install
 ```
