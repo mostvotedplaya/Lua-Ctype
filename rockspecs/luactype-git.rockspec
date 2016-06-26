@@ -9,7 +9,7 @@ description = {
       Ctype provides various character type functions for
       helping test or validate data.
    ]],
-   license = "MIT
+   license = "MIT"
 }
 dependencies = {
    "lua >= 5.1"
