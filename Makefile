@@ -1,11 +1,11 @@
-PREFIX  = /usr/local
-LUALIB  = $(PREFIX)/lib/lua/5.1
-CFLAGS  = -02 -Wall -fPIC -shared
+PREFIX  = /usr
+LUALIB  = $(PREFIX)/lib64/lua/5.1
+CFLAGS  = -O2 -Wall -fPIC -shared
 TARGET  = ctype
 
 all:
-	$(CC) $(CFLAGS) -o $(TARGET).so $(TARGET).c
+    	$(CC) $(CFLAGS) -o $(TARGET).so $(TARGET).c
 clean:
-	$(RM) $(TARGET).so
+      	$(RM) $(TARGET).so
 install:
-	mv $(TARGET).so $(LUALIB)
+        mv $(TARGET).so $(LUALIB)
