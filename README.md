@@ -202,3 +202,12 @@ else
    print("No")
 end
 ```
+
+## Installation
+
+```
+git clone git://github.com/mostvotedplaya/Lua-Ctype.git
+cd Lua-Ctype
+make
+make install
+```
