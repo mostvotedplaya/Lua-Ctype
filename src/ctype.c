@@ -101,5 +101,5 @@ static const luaL_Reg R[] =
 int luaopen_ctype( lua_State *L )
 {
     luaL_openlib( L, "ctype", R, 0 );
-    return 0;
+    return 1;
 }
