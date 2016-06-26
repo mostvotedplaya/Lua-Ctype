@@ -1,5 +1,5 @@
-package = "Lua-ctype"
-version = "git"
+package = "luactype"
+version = "git-1"
 source = {
    url = "git://github.com/mostvotedplaya/Lua-Ctype.git"
 }
