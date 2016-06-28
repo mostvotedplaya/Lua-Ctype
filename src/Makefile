@@ -4,8 +4,8 @@ CFLAGS  = -O2 -Wall -fPIC -shared
 TARGET  = ctype
 
 all:
-    	$(CC) $(CFLAGS) -o $(TARGET).so $(TARGET).c
+	$(CC) $(CFLAGS) -I$(INCLUDE) -o $(TARGET).so $(TARGET).c
 clean:
-      	$(RM) $(TARGET).so
+	$(RM) $(TARGET).so
 install:
-        mv $(TARGET).so $(LUALIB)
+	mv $(TARGET).so $(LUALIB)
