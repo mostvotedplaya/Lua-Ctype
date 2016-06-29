@@ -4,7 +4,7 @@ CFLAGS  = -O2 -Wall -fPIC -shared
 TARGET  = ctype
 
 all:
-	$(CC) $(CFLAGS) -I$(INCLUDE) -o $(TARGET).so $(TARGET).c
+	$(CC) $(CFLAGS) -o $(TARGET).so $(TARGET).c
 clean:
 	$(RM) $(TARGET).so
 install:
